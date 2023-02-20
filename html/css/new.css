@@ -85,7 +85,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .item-selected .item-right {background: #fff;}
 #header .item-selected .item-left{border-radius: 0 25px 0 0;}
 #header .item-selected .item-right {border-radius: 25px 0 0 0;}
-#header .tab_content{height: calc(100vh - 200px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);margin-top: -1px}
+#header .tab_content{height: calc(100vh - 189px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);margin-top: -1px}
 #header .gnb_area > li a{display: block;}
 #header .gnb_area > li.active > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li.active > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
@@ -161,6 +161,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .menu_btn {display: none;}
 #header .menu_btn span{display: block;width: 20px;height: 2px;background: #000;;transition: all 0.5s}
 #header .menu_btn span:nth-child(2){margin: 5px 0}
+#header .menu_btn.active{margin-top: -3px}
 #header .menu_btn.active span:nth-child(1){display: none}
 #header .menu_btn.active span:nth-child(2){transform: rotate(45deg) }
 #header .menu_btn.active span:nth-child(3){transform: rotate(-45deg);margin-top: -7px}
@@ -194,6 +195,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .top_area .right_area .login_area li .edit{padding-left: 0;}
     #header .top_area .right_area .login_area li a{margin-right: 20px;}
     #header .top_area .right_area .login_area li:last-child a{margin-right: 0}
+    #header .tab_content{height: calc(100vh - 64px)}
     
 }
 @media all and (max-width:400px){
