@@ -48,11 +48,11 @@ $(document).ready(function(){
         }
     }
     
-     $('.gnb_area li').click(function(){
-        $(this).addClass('active');
-        $(this).children('a').toggleClass('active');
-        $(this).siblings().removeClass('active');
-          $(this).find('ul').slideToggle();
+     $('.gnb_area > li > a').click(function(){
+        $(this).parent().addClass('active');
+        $(this).parent().children('a').toggleClass('active');
+        $(this).parent().siblings().removeClass('active');
+         $(this).next('ul').slideToggle();
     });
     
       $('.menu_btn').click(function(){

@@ -53,10 +53,14 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .top_area .right_area{display: flex;align-items: center}
 #header .top_area .right_area .site_go{background: #00c57d;;color: #fff;font-size: 16px;padding: 8px 15px;border-radius: 30px;margin-right:50px;}
 #header .top_area .right_area .login_area{display: flex;align-items: center}
-#header .top_area .right_area .login_area li{font-size: 16px;border-right: 1px solid #888888;padding-right: 10px;margin-right: 10px;position: relative;}
-#header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;border-right: 0}
-#header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display: inline-block;vertical-align: middle;margin-top: -2px;margin-right: 5px}
-#header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/top_ico02.png) no-repeat;width: 16px;height: 16px;display: inline-block;vertical-align: middle;margin-top: -3px;margin-right: 5px}
+#header .top_area .right_area .login_area li{font-size: 16px;;padding-right: 10px;margin-right: 10px;position: relative;}
+#header .top_area .right_area .login_area li:after{content: '';display: block;background: #888;width: 1px;height: 15px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+#header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;}
+#header .top_area .right_area .login_area li:last-child:after{display: none}
+#header .top_area .right_area .login_area li .edit{padding-left: 25px;position: relative;}
+#header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display:block;position: absolute;left: 0;transform: translateY(-50%);top: 55%;}
+#header .top_area .right_area .login_area li .logout{padding-left: 21px}
+#header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/top_ico02.png) no-repeat;width: 16px;height: 16px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 #header #gnb{width: 350px;float: left}
 #header .gnb_tab ul{display: flex;}
 #header .gnb_tab ul li{width: 50%;text-align: center;}
@@ -92,7 +96,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_area > li > ul{padding: 0 20px;position: relative;display: none}
 #header .gnb_area > li a:before{content: '';display: block;background: url(../images/menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 30px;top: 50%;transform: translateY(-50%)}
 #header .gnb_area > li a:only-child:before{display: none}
-#header .gnb_area > li > ul li a{font-size: 15px;padding: 5px;;color: #888 !important;}
+#header .gnb_area > li > ul li a{font-size: 15px;padding: 5px;;color: #888 !important;line-height: 22px}
 #header .gnb_area > li > ul li a:hover,
 #header .gnb_area > li > ul li a:focus,
 #header .gnb_area > li > ul li a:active{color: #000 !important;font-weight: 500}
@@ -173,14 +177,12 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header #gnb{float: none;width: 100%;position: fixed;display: none}
     #header .top_area .logo{width: auto}
     #header.on .right_area{margin-left: auto;margin-right: 20px;}
-    #header .top_area .right_area .site_go{font-size:14px;padding: 4px 10px}
+    #header .top_area .right_area .site_go{font-size:14px;padding: 5px 10px}
     .conts_main{width: 100%;float: none;padding: 20px}
 }
 
 @media all and (max-width:768px){
     #header .top_area .right_area .login_area li a{text-indent: -9999px;}
-    #header .top_area .right_area .login_area li .edit{background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display: block;}
-    #header .top_area .right_area .login_area li .logout{background: url(../images/top_ico02.png) no-repeat center;width: 16px;height: 20px;display: inline-block;vertical-align: middle;margin-top: -7px;margin-right: 5px}
     #header.on .right_area{margin-right: 15px}
     #header .top_area .logo{width: 130px}
     #header .top_area .logo img{width: 100%}
@@ -188,6 +190,9 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .gnb_area > li > a{font-size: 15px}
     #header .gnb_area > li > ul li a{font-size: 13px}
     .conts_main{padding: 20px}
+    #header .top_area .right_area .login_area li .edit{padding-left: 0;}
+    #header .top_area .right_area .login_area li a{margin-right: 20px;}
+    #header .top_area .right_area .login_area li:last-child a{margin-right: 0}
     
 }
 @media all and (max-width:400px){
