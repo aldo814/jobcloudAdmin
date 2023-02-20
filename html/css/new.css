@@ -64,7 +64,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_tab ul li:nth-child(1).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/menu_active.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
 #header .gnb_tab ul li:nth-child(2) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_ico.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
 #header .gnb_tab ul li:nth-child(2).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_active.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
-#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;}
+#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;margin-bottom: -2px}
 #header .gnb_tab ul li.active a{color: #000000}
 #header .gnb_area{background: #fff;}
 #header  .tab_content{padding: 20px 20px 30px 20px}
