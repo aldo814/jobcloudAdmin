@@ -1,5 +1,4 @@
-$(document).ready(function () {
-
+$(document).ready(function(){
     // 탭 컨텐츠 숨기기
     $(".tab_content").hide();
 
