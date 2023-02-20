@@ -57,6 +57,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .top_area .right_area .login_area li:after{content: '';display: block;background: #888;width: 1px;height: 15px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
 #header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;}
 #header .top_area .right_area .login_area li:last-child:after{display: none}
+#header .top_area .right_area .login_area li a{color: #333}
 #header .top_area .right_area .login_area li .edit{padding-left: 25px;position: relative;}
 #header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display:block;position: absolute;left: 0;transform: translateY(-50%);top: 55%;}
 #header .top_area .right_area .login_area li .logout{padding-left: 21px}
