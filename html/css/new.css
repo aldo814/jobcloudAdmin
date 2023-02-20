@@ -198,7 +198,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .top_area .right_area .login_area li:last-child a{margin-right: 0}
     #header .tab_content{height: calc(100vh - 64px)}
     #header .top_area .right_area .login_area li .logout{padding-left: 0;}
-    #header .top_area .right_area .login_area li .edit:before{transform:translateY(-45%)}
+    #header .top_area .right_area .login_area li .edit:before{transform:translateY(-45%);top: 50%}
     #header .menu_btn{margin-left: 20px}
 }
 @media all and (max-width:480px){
