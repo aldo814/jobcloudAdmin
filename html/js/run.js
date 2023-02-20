@@ -56,6 +56,7 @@ $(document).ready(function(){
     });
     
       $('.menu_btn').click(function(){
+         $('#header').toggleClass('active');
          $(this).toggleClass('active');
           $('#gnb').fadeToggle();
       });

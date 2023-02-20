@@ -176,7 +176,8 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .top_area .right_area .login_area li a{display: block;}
     #header .top_area{padding: 20px}
     #header .top_area .right_area .site_go{margin-right: 20px}
-    #header #gnb{float: none;width: 100%;position: fixed;display: none}
+    #header #gnb{float: none;width: 100%;display: none}
+    #header.active{position: fixed;}
     #header .top_area .logo{width: auto}
     #header.on .right_area{margin-left: auto;margin-right: 20px;}
     #header .top_area .right_area .site_go{font-size:14px;padding: 5px 10px}
@@ -196,8 +197,10 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .top_area .right_area .login_area li a{margin-right: 20px;}
     #header .top_area .right_area .login_area li:last-child a{margin-right: 0}
     #header .tab_content{height: calc(100vh - 64px)}
-    
+    #header .top_area .right_area .login_area li .logout{padding-left: 0;}
+    #header .top_area .right_area .login_area li .edit:before{transform:translateY(-45%)}
+    #header .menu_btn{margin-left: 20px}
 }
-@media all and (max-width:400px){
+@media all and (max-width:480px){
     #header .top_area .right_area .site_go{display: none}
 }
