@@ -1,10 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* reset.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,37 +12,37 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+a{text-decoration: none}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
 html{overflow: inherit;}
 
 #new_wrap{background: #f9fafa;min-height: 100vh}
@@ -86,14 +80,14 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .item-selected .item-right {background: #fff;}
 #header .item-selected .item-left{border-radius: 0 25px 0 0;}
 #header .item-selected .item-right {border-radius: 25px 0 0 0;}
-#header .tab_content{height: calc(100vh - 200px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)}
+#header .tab_content{height: calc(100vh - 200px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);margin-top: -1px}
 #header .gnb_area > li a{display: block;}
 #header .gnb_area > li.active > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li.active > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area > li:hover > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li:hover > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area li.active a{color: #000000;}
-#header .gnb_area > li > a{padding: 10px 10px 10px 35px;position: relative}
+#header .gnb_area > li > a{padding: 15px 15px 15px 35px;position: relative}
 #header .gnb_area > li > a{font-size: 16px;color: #888888;font-weight: 500;}
 #header .gnb_area > li > ul{padding: 0 20px;position: relative;display: none}
 #header .gnb_area > li a:before{content: '';display: block;background: url(../images/menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 30px;top: 50%;transform: translateY(-50%)}
