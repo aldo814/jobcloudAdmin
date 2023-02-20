@@ -1,0 +1,151 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html{overflow: inherit;}
+
+#new_wrap{background: #f9fafa;min-height: 100vh}
+body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", sans-serif !important;}
+#header {border-bottom: 0;box-shadow: none !important;background: none}
+#header .top_area {padding: 30px 50px 30px 0;display: flex;justify-content: space-between;border-bottom: 0;box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);background: #fff;position: relative;z-index: 555;align-items: center}
+#header .top_area .logo{width: 350px;float: none;padding-left: 0;text-align: center}
+#header .top_area .right_area{display: flex;align-items: center}
+#header .top_area .right_area .site_go{background: #00c57d;;color: #fff;font-size: 16px;padding: 8px 15px;border-radius: 30px;margin-right:50px;}
+#header .top_area .right_area .login_area{display: flex;align-items: center}
+#header .top_area .right_area .login_area li{font-size: 16px;border-right: 1px solid #888888;padding-right: 10px;margin-right: 10px;position: relative;}
+#header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;border-right: 0}
+#header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display: inline-block;vertical-align: middle;margin-top: -2px;margin-right: 5px}
+#header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/top_ico02.png) no-repeat;width: 16px;height: 16px;display: inline-block;vertical-align: middle;margin-top: -3px;margin-right: 5px}
+#header #gnb{width: 350px;float: left}
+#header .gnb_tab ul{display: flex;}
+#header .gnb_tab ul li{width: 50%;text-align: center;}
+#header .gnb_tab ul li:nth-child(1) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px; ;background: url(../images/menu.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(1).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/menu_active.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(2) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_ico.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(2).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_active.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
+#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;}
+#header .gnb_tab ul li.active a{color: #000000}
+#header .gnb_area{background: #fff;}
+#header  .tab_content{padding: 20px 20px 30px 20px}
+#header .item-selected{background: #f9fafa;}
+#header .item-unselected{background: #fff;}
+#header .item-left{border-radius: 0 25px 0 0;-webkit-border-radius: 0 25px 0 0;-moz-border-radius: 0 25px 0 0;-ms-border-radius: 0 25px 0 0;-o-border-radius: 0 25px 0 0;position: relative;}
+#header .item-right{border-radius: 0 0 0 25px;-webkit-border-radius: 0 0 0 25px;-moz-border-radius: 0 0 0 25px;-ms-border-radius: 0 0 0 25px;-o-border-radius: 0 0 0 25px;position: relative;}
+#header .item-unselected .item-left,
+#header .item-unselected .item-right {;background: #f9fafa;}
+#header .item-unselected .item-left{border-radius: 0 0 25px 0;}
+#header .item-unselected .item-right {border-radius: 0 0 0 25px;}
+#header .item-selected .item-left,
+#header .item-selected .item-right {background: #fff;}
+#header .item-selected .item-left{border-radius: 0 25px 0 0;}
+#header .item-selected .item-right {border-radius: 25px 0 0 0;}
+#header .tab_content{height: calc(100vh - 200px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)}
+#header .gnb_area > li a{display: block;}
+#header .gnb_area > li.active > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
+#header .gnb_area > li.active > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
+#header .gnb_area > li:hover > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
+#header .gnb_area > li:hover > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
+#header .gnb_area li.active a{color: #000000;}
+#header .gnb_area > li > a{padding: 10px 10px 10px 35px;position: relative}
+#header .gnb_area > li > a{font-size: 16px;color: #888888;font-weight: 500;}
+#header .gnb_area > li > ul{padding: 0 20px;position: relative;display: none}
+#header .gnb_area > li a:before{content: '';display: block;background: url(../images/menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 30px;top: 50%;transform: translateY(-50%)}
+#header .gnb_area > li a:only-child:before{display: none}
+#header .gnb_area > li > ul li a{font-size: 15px;padding: 5px;;color: #888 !important;}
+#header .gnb_area > li > ul li a:hover,
+#header .gnb_area > li > ul li a:focus,
+#header .gnb_area > li > ul li a:active{color: #000 !important;font-weight: 500}
+#header .gnb_area  a.active:before {transform: rotate(180deg);margin-top: -7px}
+#header .gnb_area > li{position: relative;}
+#header .gnb_area > li.item01:before{content: '';display: block;background: url(../images/gnb_ico01.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 13px}
+#header .gnb_area > li.active.item01:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 13px;z-index: 5}
+#header .gnb_area > li.item01:hover:before,
+#header .gnb_area > li.item01:active:before,
+#header .gnb_area > li.item01:focus:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 50%;transform: translateY(-50%);z-index: 5}
+#header .gnb_area > li.item02:before{content: '';display: block;background: url(../images/gnb_ico02.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item02.active:before{content: '';display: block;background: url(../images/gnb_ico02_active.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;;z-index: 5}
+#header .gnb_area > li.item02:active:before,
+#header .gnb_area > li.item02:focus:before,
+#header .gnb_area > li.item02:hover:before{content: '';display: block;background: url(../images/gnb_ico02_active.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;;z-index: 5}
+#header .gnb_area > li.item03:before{content: '';display: block;background: url(../images/gnb_ico03.png) no-repeat;width: 18px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item03.active:before{content: '';display: block;background: url(../images/gnb_ico03_active.png) no-repeat;width: 18px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item03:active:before,
+#header .gnb_area > li.item03:focus:before,
+#header .gnb_area > li.item03:hover:before{content: '';display: block;background: url(../images/gnb_ico03_active.png) no-repeat;width: 18px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item04:before{content: '';display: block;background: url(../images/gnb_ico04.png) no-repeat;width: 17px;height: 18px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item04.active:before{content: '';display: block;background: url(../images/gnb_ico04_active.png) no-repeat;width: 17px;height: 18px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item04:hover:before,
+#header .gnb_area > li.item04:focus:before,
+#header .gnb_area > li.item04:active:before{content: '';display: block;background: url(../images/gnb_ico04_active.png) no-repeat;width: 17px;height: 18px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item05:before{content: '';display: block;background: url(../images/gnb_ico05.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.active.item05:before{content: '';display: block;background: url(../images/gnb_ico05_active.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item05:hover:before,
+#header .gnb_area > li.item05:active:before,
+#header .gnb_area > li.item05:focus:before{content: '';display: block;background: url(../images/gnb_ico05_active.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item06:before{content: '';display: block;background: url(../images/gnb_ico06.png) no-repeat;width: 17px;height: 17px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.active.item06:before{content: '';display: block;background: url(../images/gnb_ico06_active.png) no-repeat;width: 17px;height: 17px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item06:hover:before,
+#header .gnb_area > li.item06:active:before,
+#header .gnb_area > li.item06:focus:before{content: '';display: block;background: url(../images/gnb_ico06_active.png) no-repeat;width: 17px;height: 17px;position: absolute;left: 10px;top:13px;z-index: 5}
+#header .gnb_area > li.item07:before{content: '';display: block;background: url(../images/gnb_ico07.png) no-repeat;width: 16px;height: 16px;position: absolute;left: 10px;top:14px;z-index: 5}
+#header .gnb_area > li.item07.active:before{content: '';display: block;background: url(../images/gnb_ico07_active.png) no-repeat;width: 16px;height: 16px;position: absolute;left: 10px;top:14px;z-index: 5}
+#header .gnb_area > li.item07:active:before,
+#header .gnb_area > li.item07:focus:before,
+#header .gnb_area > li.item07:hover:before{content: '';display: block;background: url(../images/gnb_ico07_active.png) no-repeat;width: 16px;height: 16px;position: absolute;left: 10px;top:14px;z-index: 5}
+#header .gnb_area > li.item08:before{content: '';display: block;background: url(../images/gnb_ico08.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item08.active:before{content: '';display: block;background: url(../images/gnb_ico08_active.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item08:hover:before,
+#header .gnb_area > li.item08:active:before,
+#header .gnb_area > li.item08:focus:before{content: '';display: block;background: url(../images/gnb_ico08_active.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item09:before{content: '';display: block;background: url(../images/gnb_ico09.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item09.active:before{content: '';display: block;background: url(../images/gnb_ico09_active.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item09:hover:before,
+#header .gnb_area > li.item09:active:before,
+#header .gnb_area > li.item09:focus:before{content: '';display: block;background: url(../images/gnb_ico09_active.png) no-repeat;width: 16px;height: 14px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item10:before{content: '';display: block;background: url(../images/gnb_ico10.png) no-repeat;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item10.active:before{content: '';display: block;background: url(../images/gnb_ico10_active.png) no-repeat left;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
+#header .gnb_area > li.item10.active:hover:before,
+#header .gnb_area > li.item10.active:active:before,
+#header .gnb_area > li.item10.active:focus:before{content: '';display: block;background: url(../images/gnb_ico10_active.png) no-repeat left;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
+
+
+.conts_main{float: left;padding: 35px;box-sizing: border-box;width: calc(100% - 420px);}
+
+/* 모바일 메뉴 */
+#header .menu_btn {display: none;}
+#header .menu_btn span{display: block;width: 20px;height: 2px;background: #000;;transition: all 0.5s}
+#header .menu_btn span:nth-child(2){margin: 5px 0}
+#header .menu_btn.active span:nth-child(1){display: none}
+#header .menu_btn.active span:nth-child(2){transform: rotate(45deg) }
+#header .menu_btn.active span:nth-child(3){transform: rotate(-45deg);margin-top: -7px}
+
+@media all and (max-width:1200px){
+    #header{min-width: 100%}
+}
+@media all and (max-width:1024px){
+    #header .top_area{padding: 10px;}
+    #header .menu_btn {display: block;}
+    #header .top_area{justify-content:space-between}
+    #header .top_area .right_area .login_area li a{display: block;}
+    #header .top_area{padding: 20px}
+    #header .top_area .right_area .site_go{margin-right: 20px}
+    #header #gnb{float: none;width: 100%;position: fixed;display: none}
+    #header .top_area .logo{width: auto}
+    #header.on .right_area{margin-left: auto;margin-right: 20px;}
+    #header .top_area .right_area .site_go{font-size:14px;padding: 4px 10px}
+    .conts_main{width: 100%;float: none;padding: 20px}
+}
+
+@media all and (max-width:768px){
+    #header .top_area .right_area .login_area li a{text-indent: -9999px;}
+    #header .top_area .right_area .login_area li .edit{background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display: block;}
+    #header .top_area .right_area .login_area li .logout{background: url(../images/top_ico02.png) no-repeat center;width: 16px;height: 20px;display: inline-block;vertical-align: middle;margin-top: -7px;margin-right: 5px}
+    #header.on .right_area{margin-right: 15px}
+    #header .top_area .logo{width: 130px}
+    #header .top_area .logo img{width: 100%}
+    #header .gnb_tab ul li a{font-size: 16px}
+    #header .gnb_area > li > a{font-size: 15px}
+    #header .gnb_area > li > ul li a{font-size: 13px}
+    .conts_main{padding: 20px}
+    
+}
+@media all and (max-width:400px){
+    #header .top_area .right_area .site_go{display: none}
+}
