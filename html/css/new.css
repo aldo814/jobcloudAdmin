@@ -103,11 +103,11 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_area > li > ul li a:active{color: #000 !important;font-weight: 500}
 #header .gnb_area  a.active:before {transform: rotate(180deg);margin-top: -7px}
 #header .gnb_area > li{position: relative;}
-#header .gnb_area > li.item01:before{content: '';display: block;background: url(../images/gnb_ico01.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 13px}
-#header .gnb_area > li.active.item01:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 13px;z-index: 5}
+#header .gnb_area > li.item01:before{content: '';display: block;background: url(../images/gnb_ico01.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 15px}
+#header .gnb_area > li.active.item01:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 15px;z-index: 5}
 #header .gnb_area > li.item01:hover:before,
 #header .gnb_area > li.item01:active:before,
-#header .gnb_area > li.item01:focus:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 50%;transform: translateY(-50%);z-index: 5}
+#header .gnb_area > li.item01:focus:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 15px;}
 #header .gnb_area > li.item02:before{content: '';display: block;background: url(../images/gnb_ico02.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;z-index: 5}
 #header .gnb_area > li.item02.active:before{content: '';display: block;background: url(../images/gnb_ico02_active.png) no-repeat;width: 12px;height: 16px;position: absolute;left: 10px;top:13px;;z-index: 5}
 #header .gnb_area > li.item02:active:before,
