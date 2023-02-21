@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/kendo.common.min.css" />
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    
+    <script src="js/kendo.all.min.js"></script>
+    
+
+
+</head>
+<body>
+            <div id="example">
+            <div id="treelist">
+            </div>
+            <button id="newBtn2">dd</button>
+            <script>
+                $(document).ready(function () {
+                    
+                    var dataSource = new kendo.data.TreeListDataSource({
+                        data: [
+                          { id: 1, 메뉴명: "교육과정관리", 메뉴설명: "CEO", 링크URL: "/gardener/ba/ba_menu_mgmt_main.do", 권한:'ROLE_GARDENER,ROLE_SYSTEM' , parentId: null },
+                           { id: 2, 메뉴명: "과정관리", 메뉴설명: "CEO", 링크URL: "/gardener/ba/ba_menu_mgmt_main.do", 권한:'ROLE_GARDENER,ROLE_SYSTEM' , parentId: 1 },
+                           { id: 3, 메뉴명: "차수관리", 메뉴설명: "CEO", 링크URL: "/gardener/ba/ba_menu_mgmt_main.do", 권한:'ROLE_GARDENER,ROLE_SYSTEM' , parentId: 2 },
+                           { id: 4, 메뉴명: "운영관리", 메뉴설명: "CEO", 링크URL: "/gardener/ba/ba_menu_mgmt_main.do", 권한:'ROLE_GARDENER,ROLE_SYSTEM' , parentId: 3 },
+                         { id: 5, 메뉴명: "동영상관리", 메뉴설명: "CEO", 링크URL: "/gardener/ba/ba_menu_mgmt_main.do", 권한:'ROLE_GARDENER,ROLE_SYSTEM' , parentId: 4 },
+                        ],
+
+                        schema: {
+                            model: {
+                                id: "id",
+                                expanded: true
+                            }
+                        }
+                    });
+
+                    detailGrid  = $("#treelist").kendoTreeList({
+                        dataSource: dataSource,
+                        editable: true,
+                           editable: {
+                        move: {
+                            reorderable: true
+                        }
+                    },
+                        columns: [
+                            { field: "메뉴명" },
+                            { field: "메뉴설명" },
+                            { field: "링크URL" },
+                            { field: "권한",editor: roleMultiSelectEditor},
+                            { title: "관리", command: [{ name: "edit", text:"편집", className: "btn_inner" },
+                        { name: "destroy", text:"삭제", className: "btn_inner" }] },
+                            
+                        ],
+                         messages: {
+                       commands: {cancel: "취소", canceledit: "취소", create: "추가", destroy: "삭제", edit: "편집", save: "저장", select: "선택", update: "저장"}
+                   },
+               save : function(e) {
+                  if(!confirm("저장하시겠습니까?")) e.preventDefault();
+                   },
+                   remove : function(e) {
+                      if(!confirm("삭제하시겠습니까?")) e.preventDefault();
+                   }
+                    });
+                });
+              
+                   function roleMultiSelectEditor(container, options) {
+    	var item = [];
+      	if(options.model.roles !== undefined && options.model.roles!=null) {
+      		item = options.model.roles.split(",");
+      	}
+                       
+                       /* 롤 정보선택 용 데이터소스 호출 */
+	        roleDS = new kendo.data.DataSource({
+        	  transport: {
+        		type: "json",
+       		    read: { url:"/gardener/ba/role_list.json", dataType: "json"} 
+       		  },
+       		  schema: {
+                	total: "totalCount",
+                	data: "items",
+                	model: {
+                    	id : "name",
+                    	fields: { roleId: {type:"number"}, name: {type:"string"}, description: {type:"string"} }
+                    }
+        	  }
+       		});
+	        roleDS.read();
+      	
+    	$('<select name="'+options.field+'" multiple="multiple"></select>').appendTo(container).kendoMultiSelect({
+			placeholder: "클릭 시 현재 권한 및 추가가 가능합니다.",
+   	        dataTextField: "name", dataValueField: "name",
+ 	        autoBind: false,
+  	        dataSource: roleDS,
+  	        value : item,
+  	        change : function(e) {
+  	        	options.model.roles = this.value().join();
+  	        }
+   	    });
+    }
+    
+                   /* 메뉴 추가버튼  Click Event */
+	        $("#newBtn2").on("click", function(){
+	        	detailGrid.addRow();
+	        });
+                
+	        
+            </script>
+        </div>
+
+
+
+</body>
+</html>

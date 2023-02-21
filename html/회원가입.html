@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잡클라우드</title>
+    <link rel="stylesheet" type="text/css" href="http://222.122.63.166:8080/css/admin/sub.css">
+    <!--추가-->
+    <link rel="stylesheet" href="css/new.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+   <div class="container">
+    <div class="join_area login_wrap">
+        <div class="logo_area">
+            <img src="images/logo02.png" alt="JOBCLOUD">
+        </div>
+        <div class="cont_area">
+           <h3 class="pop_tit">회원가입</h3>
+             <div class="id_find">
+                <div>
+                    <label for="if_name">이름</label>
+                    <input type="text" placeholder="이름을 입력하세요." id="if_name">
+                </div>
+                 <div class="mb10">
+                    <label for="if_id">아이디</label>
+                    <div class="join_id">
+                    <input type="text" placeholder="아이디(이메일)를 입력하세요." id="if_name">
+                    <a href="#">중복확인</a>
+                    </div>
+                </div>
+                 <p class="desc">상태메시지 출력</p>
+                <div class="add_desc mb10">
+                    <label for="if_paw">비밀번호</label>
+                    <input type="password" placeholder="비밀번호를 입력하세요." id="if_paw">
+                </div>
+                 <p class="desc">※ 비밀번호는 영문, 숫자, 특수문자 조합으로 8자 이상을 권장합니다.</p>
+                 <div class="add_desc mb10">
+                    <label for="if_paw2">비밀번호 확인</label>
+                    <input type="password" placeholder="입력된 비밀번호를 확인합니다." id="if_paw2">
+                </div>
+                 <p class="desc">상태메시지 출력</p>
+                 <div class="add_desc">
+                    <label for="if_name">연락처</label>
+                    <input type="text" placeholder="연락처는 하이픈(-) 없이 숫자만 입력해 주세요." id="if_name">
+                </div>
+            </div>
+             <div class="join_form">
+                 <div>
+                     <div class="check_style">
+                         <input type="checkbox" id="agree01">
+                         <label for="agree01">이용약관에 동의합니다. <a href="#">[전문보기]</a></label>
+                         <p>- 본 약관 내에는 영리목적 광고성 정보 수신동의에 관한 사항이
+포함되어 있습니다. </p>
+                     </div>
+                 </div>
+                <div>
+                     <div class="check_style">
+                         <input type="checkbox" id="agree02">
+                         <label for="agree02">개인정보 수집 및 이용에 동의합니다. <a href="#">[전문보기]</a></label>
+                     </div>
+                 </div>
+             </div>
+              
+               <button class="green_btn big_btn" type="submit">회원가입</button>
+        </div>
+    </div> 
+    </div>
+</body></html>
