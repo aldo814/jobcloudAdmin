@@ -197,8 +197,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_area > li.item10.active:active:before,
 #header .gnb_area > li.item10.active:focus:before{content: '';display: block;background: url(../images/gnb_ico10_active.png) no-repeat left;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
 
-
-.conts_main{float: left;padding: 35px;box-sizing: border-box;width: calc(100% - 420px);}
+.conts_main{display: flex;padding: 35px;box-sizing: border-box;width: calc(100% - 350px);}
 
 /* 모바일 메뉴 */
 #header .menu_btn {display: none;}
