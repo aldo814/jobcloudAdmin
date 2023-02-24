@@ -61,6 +61,7 @@ $(document).ready(function(){
           $('#gnb').fadeToggle();
       });
     
-    
+    var top_area = $('.top_area').outerHeight();
+  $('#gnb').css('top',top_area);
 
 });

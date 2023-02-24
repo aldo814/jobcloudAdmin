@@ -44,75 +44,32 @@ table {
     border-spacing: 0;
 }
 html{overflow: inherit;}
-.black{color: #000 !important}
-.tct{text-align: center}
-.f16{font-size: 16px !important}
 
-.mb10{margin-bottom: 10px !important}
-.check_style input[type=checkbox] {
-  position: relative;
-	border: 1px solid #ccc;
-    background: #fcfcfc;
-	border-radius: 2px;
-	background: none;
-	cursor: pointer;
-	line-height: 0;
-	margin: 0 5px 0 0;
-	outline: 0;
-	padding: 0 !important;
-	vertical-align: text-top;
-	height: 16px;
-	width: 16px;
-	-webkit-appearance: none;
-  opacity: 1;
-    margin-top: 3px
-}
-.check_style label{color: #333}
-
-.check_style input[type=checkbox]:checked {
-  background-color: #0082cc;
-    border:1px solid #0082cc;
-  opacity: 1;
-}
-
-.check_style input[type=checkbox]:before {
-  content: '';
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  width: 4px;
-  height: 10px;
-  border: solid #FFF;
-  border-width: 0 2px 2px 0;
-  margin: -1px -1px 0 -1px;
-  transform: rotate(45deg) translate(-50%, -50%);
-  z-index: 2;
-}
-#new_wrap{background: #f9fafa;min-height: 100vh}
+#new_wrap{background: #f9f9f9;min-height: 100vh}
 body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", sans-serif !important;}
 #header {border-bottom: 0;box-shadow: none !important;background: none}
-#header .top_area {padding: 30px 50px 30px 0;display: flex;justify-content: space-between;border-bottom: 0;box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);background: #fff;position: relative;z-index: 555;align-items: center}
-#header .top_area .logo{width: 350px;float: none;padding-left: 0;text-align: center}
+#header .top_area {padding: 20px 32px;display: flex;justify-content: space-between;border-bottom: 0;background: #384150;position: relative;z-index: 555;align-items: center;position: fixed;width: 100%;top: 0;box-sizing: border-box}
+#header .top_area .logo{width: 350px;float: none;padding-left: 0;}
 #header .top_area .right_area{display: flex;align-items: center}
-#header .top_area .right_area .site_go{background: #00c57d;;color: #fff;font-size: 16px;padding: 8px 15px;border-radius: 30px;margin-right:50px;}
+#header .top_area .right_area .site_go{background: #39b777;;color: #fff;font-size: 15px;padding: 8px 16px;border-radius: 32px;margin-right:32px;}
 #header .top_area .right_area .login_area{display: flex;align-items: center}
-#header .top_area .right_area .login_area li{font-size: 16px;;padding-right: 10px;margin-right: 10px;position: relative;}
-#header .top_area .right_area .login_area li:after{content: '';display: block;background: #888;width: 1px;height: 15px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+#header .top_area .right_area .login_area li{font-size: 16px;padding-right: 16px;margin-right: 16px;position: relative;}
+#header .top_area .right_area .login_area li:after{content: '';display: block;background: #888;width: 1px;height: 13px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
 #header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;}
 #header .top_area .right_area .login_area li:last-child:after{display: none}
-#header .top_area .right_area .login_area li a{color: #333}
+#header .top_area .right_area .login_area li a{color: #fff;}
 #header .top_area .right_area .login_area li .edit{padding-left: 25px;position: relative;}
-#header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/top_ico.png) no-repeat;width: 19px;height: 20px;display:block;position: absolute;left: 0;transform: translateY(-50%);top: 55%;}
+#header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/renewal/admin/top_ico.png) no-repeat;filter: invert(100%);width: 19px;height: 20px;display:block;position: absolute;left: 0;transform: translateY(-50%);top: 55%;}
 #header .top_area .right_area .login_area li .logout{padding-left: 21px}
-#header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/top_ico02.png) no-repeat;width: 16px;height: 16px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
-#header #gnb{width: 350px;float: left}
+#header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/renewal/admin/top_ico02.png) no-repeat;filter: invert(100%);width: 16px;height: 16px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
+#header #gnb{width: 280px;position: fixed;left: 0;top: 70px;z-index: 5;}
 #header .gnb_tab ul{display: flex;}
 #header .gnb_tab ul li{width: 50%;text-align: center;}
-#header .gnb_tab ul li:nth-child(1) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px; ;background: url(../images/menu.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
-#header .gnb_tab ul li:nth-child(1).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/menu_active.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
-#header .gnb_tab ul li:nth-child(2) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_ico.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
-#header .gnb_tab ul li:nth-child(2).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/module_active.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
-#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;margin-bottom: -2px}
+#header .gnb_tab ul li:nth-child(1) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px; ;background: url(../images/renewal/admin/menu.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(1).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/menu_active.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(2) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/module_ico.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
+#header .gnb_tab ul li:nth-child(2).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/module_active.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
+#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;}
 #header .gnb_tab ul li.active a{color: #000000}
 #header .gnb_area{background: #fff;}
 #header  .tab_content{padding: 20px 20px 30px 20px}
@@ -121,30 +78,31 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .item-left{border-radius: 0 25px 0 0;-webkit-border-radius: 0 25px 0 0;-moz-border-radius: 0 25px 0 0;-ms-border-radius: 0 25px 0 0;-o-border-radius: 0 25px 0 0;position: relative;}
 #header .item-right{border-radius: 0 0 0 25px;-webkit-border-radius: 0 0 0 25px;-moz-border-radius: 0 0 0 25px;-ms-border-radius: 0 0 0 25px;-o-border-radius: 0 0 0 25px;position: relative;}
 #header .item-unselected .item-left,
-#header .item-unselected .item-right {;background: #f9fafa;}
+#header .item-unselected .item-right {background: #f9f9f9;}
 #header .item-unselected .item-left{border-radius: 0 0 25px 0;}
 #header .item-unselected .item-right {border-radius: 0 0 0 25px;}
 #header .item-selected .item-left,
 #header .item-selected .item-right {background: #fff;}
 #header .item-selected .item-left{border-radius: 0 25px 0 0;}
-#header .item-selected .item-right {border-radius: 25px 0 0 0;}
-#header .tab_content{height: calc(100vh - 189px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);margin-top: -1px}
+#header .item-selected .item-right {border-radius: 25px 16px 0 0;}
+#header .tab_content{height: calc(100vh - 139px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;margin-top:-1px}
 #header .gnb_area > li a{display: block;}
 #header .gnb_area > li.active > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
-#header .gnb_area > li.active > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
+#header .gnb_area > li.active > a:after{content: '';display: block;/* background:#0082cc; */width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area > li:hover > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li:hover > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area li.active a{color: #000000;}
-#header .gnb_area > li > a{padding: 15px 15px 15px 35px;position: relative}
+#header .gnb_area > li > a{padding: 15px;position: relative}
 #header .gnb_area > li > a{font-size: 16px;color: #888888;font-weight: 500;}
 #header .gnb_area > li > ul{padding: 0 20px;position: relative;display: none}
-#header .gnb_area > li a:before{content: '';display: block;background: url(../images/menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 30px;top: 50%;transform: translateY(-50%)}
+#header .gnb_area > li a:before{content: '';display: block;background: url(../images/renewal/icon/icon_menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 12px;top: 50%;transform: translateY(-50%) rotate(-90deg);/* transform: rotate(0deg); */opacity: .25;}
 #header .gnb_area > li a:only-child:before{display: none}
-#header .gnb_area > li > ul li a{font-size: 15px;padding: 5px;;color: #888 !important;line-height: 22px}
+#header .gnb_area > li > ul li a{font-size: 15px;padding: 8px 8px 8px 16px;color: #888 !important;line-height: 22px;border-left: 3px solid #eaeaea;}
 #header .gnb_area > li > ul li a:hover,
 #header .gnb_area > li > ul li a:focus,
 #header .gnb_area > li > ul li a:active{color: #000 !important;font-weight: 500}
-#header .gnb_area  a.active:before {transform: rotate(180deg);margin-top: -7px}
+#header .gnb_area > li > ul li a.active{color: #000 !important;font-weight: 500}
+#header .gnb_area  a.active:before {transform: rotate(0deg);margin-top: -7px;}
 #header .gnb_area > li{position: relative;}
 #header .gnb_area > li.item01:before{content: '';display: block;background: url(../images/gnb_ico01.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 15px}
 #header .gnb_area > li.active.item01:before{content: '';display: block;background: url(../images/gnb_ico01_active.png) no-repeat;width: 14px;height: 15px;position: absolute;left: 10px;top: 15px;z-index: 5}
@@ -196,82 +154,16 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_area > li.item10.active:hover:before,
 #header .gnb_area > li.item10.active:active:before,
 #header .gnb_area > li.item10.active:focus:before{content: '';display: block;background: url(../images/gnb_ico10_active.png) no-repeat left;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
-
-.conts_main{display: flex;padding: 35px;box-sizing: border-box;width: calc(100% - 350px);}
+.conts_main{padding: 35px;box-sizing: border-box;width: calc(100% - 280px);position: relative;margin: 75px 0 0 280px}
 
 /* 모바일 메뉴 */
 #header .menu_btn {display: none;}
-#header .menu_btn span{display: block;width: 20px;height: 2px;background: #000;;transition: all 0.5s}
+#header .menu_btn span{display: block;width: 20px;height: 2px;background: #fff;;transition: all 0.5s}
 #header .menu_btn span:nth-child(2){margin: 5px 0}
 #header .menu_btn.active{margin-top: -3px}
 #header .menu_btn.active span:nth-child(1){display: none}
 #header .menu_btn.active span:nth-child(2){transform: rotate(45deg) }
 #header .menu_btn.active span:nth-child(3){transform: rotate(-45deg);margin-top: -7px}
-
-/* 로그인 & 회원가입 */
-.login_wrap{max-width: 560px;margin: auto;border: 1px solid #ececec;box-shadow: 0 1px 2px rgba(191, 191, 191, 0.2);margin-top: 200px}
-.login_wrap .logo_area{background: #fafafa;text-align: center;padding: 50px 20px}
-.login_wrap .cont_area{padding: 50px 60px}
-.login_wrap .login_box div{border-bottom: 1px solid #eaeaea;display: flex;align-items: center;margin-bottom: 10px}
-.login_wrap .login_box div:last-child{margin-bottom: 10px}
-.login_wrap .login_box span{width: 30px;}
-.login_wrap .login_box .id{background: url(../images/id_ico.png) no-repeat left center;height: 28px;}
-.login_wrap .login_box .pw{background: url(../images/pw_ico.png) no-repeat left center;height: 26px;}
-.login_wrap .login_box input{border: 0;font-size: 16px;padding: 17px 0;width: calc(100% - 30px) }
-.login_wrap .login_box input::placeholder{color: #cccccc;}
-.login_wrap .check_area{text-align: right;font-size: 14px;}
-.blue_btn{background: #0082cc;color: #fff;}
-.gray_btn{background: #dddddd;color: #888888;}
-
-.big_btn{width: 100%;display: block;margin-top: 30px;padding: 15px;border-radius: 5px;font-size: 18px;font-weight: 400;}
-.login_wrap input[type="text"]:hover,
-.login_wrap input[type="password"]:hover{border: 0}
-.login_wrap button{cursor: pointer}
-.login_wrap .sub_area{display: flex;justify-content:space-between;margin-top: 20px;}
-.login_wrap .sub_area a{font-size: 16px;color: #888888;}
-.login_wrap .sub_area .look_box{display: flex;}
-.login_wrap .sub_area .look_box a{position: relative;margin-right: 10px;padding-right: 10px;}
-.login_wrap .sub_area .look_box a:last-child{padding-right: 0;margin-right: 0;}
-.login_wrap .sub_area .look_box a:after{content: '';display: block;width: 1px;height: 20px;background: #dddddd;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
-.login_wrap .sub_area .look_box a:last-child:after{display: none;}
-.container{max-width: 1200px;width: calc(100% - 40px);margin: auto;}
-
-/* 팝업 */
-.shadow{background: rgba(0, 0, 0, 0.33);width: 100%;height: 100vh;position: fixed;top: 0;left: 0;}
-.popup{position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 999;max-width: 560px;width: calc(100% - 40px); }
-.popup .pop_head{background: #0082cc;color: #fff;padding: 15px;display: flex;justify-content: space-between;align-items: center;font-size: 16px;}
-.popup .pop_head .close_btn{background: url(../images/pop_close.png) no-repeat;width: 18px;height: 18px;text-indent: -9999px;}
-.popup .pop_cont {background: #fff;padding: 50px 60px;}
-.popup .btn_two {display: flex;margin-top: 30px;justify-content: space-between;}
-.popup .btn_two a{width: calc(50% - 5px);text-align: center;padding: 15px;box-sizing: border-box;border-radius: 5px;font-size: 16px;font-weight: 500}
-
-/* 아이디&비밀번호 찾기 */
-.pop_tit{font-size: 24px;color: #333;text-align: center;font-weight: 500;margin-bottom: 30px}
-.id_find > div{border-bottom: 1px solid #dddddd;margin-bottom: 25px;}
-.id_find > div:last-child{margin-bottom: 10px}
-.id_find label{display: block;font-weight: 500;color: #000;font-size: 16px;margin-bottom: 5px}
-.id_find input{padding: 10px 0;border:0;font-size:16px; text-indent: 0;width: 100%}
-.id_find input::placeholder{color: #cccccc;}
-.desc{font-size: 14px ;color: #888888}
-.green_btn{background: #00c57d;color: #fff;}
-.popup .id_complete p{text-align: center;line-height: 26px;font-size:16px; color: #888888;}
-.popup .border{border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;padding: 30px 0}
-.popup .id_complete .blue{color: #0082cc;font-weight: 500}
-.popup .desc.tct.f16 {margin-top: 20px}
-
-/* 비밀번호 재설정 */
-.pw_reset .id_find div{margin-bottom: 10px;}
-.pw_reset .id_find div:nth-child(3){margin-top: 30px}
-.pw_reset .id_find div label{font-size: 16px}
-/* 회원가입 */
-.join_area{margin:50px auto !important}
-.join_area .join_id{display: flex;align-items: center}
-.join_area .join_id a{font-size: 14px;color: #888888;width: 80px;text-align: center;padding:7px  10px;border-radius: 5px;background: #f8f8f8;border:1px solid #dddddd;}
-.join_area .add_desc{margin-top: 25px}
-.join_area .join_form > div + div{margin-top: 15px}
-.join_area .check_style input[type=checkbox]{margin-top: 5px !important}
-.join_area .check_style label a{color: #007eff;}
-.join_area .check_style p{font-size: 14px;color: #888888;margin-left: 25px;margin-top: 10px;line-height: 22px}
 
 @media all and (max-width:1200px){
     #header{min-width: 100%}
@@ -279,16 +171,16 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 @media all and (max-width:1024px){
     #header .top_area{padding: 10px;}
     #header .menu_btn {display: block;}
-    #header .top_area{justify-content:space-between}
+    #header .top_area{justify-content:space-between;position: static}
     #header .top_area .right_area .login_area li a{display: block;}
     #header .top_area{padding: 20px}
     #header .top_area .right_area .site_go{margin-right: 20px}
     #header #gnb{float: none;width: 100%;display: none}
-    #header.active{position: fixed;}
+    #header.active{position: fixed;z-index:999}
     #header .top_area .logo{width: auto}
     #header.on .right_area{margin-left: auto;margin-right: 20px;}
     #header .top_area .right_area .site_go{font-size:14px;padding: 5px 10px}
-    .conts_main{width: 100%;float: none;padding: 20px}
+    .conts_main{width: 100%;float: none;padding: 20px;margin: 0}
 }
 
 @media all and (max-width:768px){
@@ -305,19 +197,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header .tab_content{height: calc(100vh - 64px)}
     #header .top_area .right_area .login_area li .logout{padding-left: 0;width: 16px}
     #header .top_area .right_area .login_area li .edit:before{transform:translateY(-45%);top: 50%}
-    
-    /* 로그인 */
-    .login_wrap{max-width: 100%;margin-top: 100px}
-    .login_wrap .logo_area{padding: 30px 20px}
-    .login_wrap .logo_area img{width: 200px}
-    .login_wrap .cont_area{padding: 30px 20px}
-    .login_wrap .login_box input{font-size: 14px}
-    .login_wrap .sub_area a{font-size: 13px}
-    .login_wrap .big_btn{font-size: 16px;}
-    .login_wrap .login_box .id{background-size: 18px;width: 25px;}
-    .login_wrap .login_box .pw{background-size: 18px;width: 25px}
-    .popup .pop_cont{padding: 20px 30px}
-    .pop_tit{font-size: 20px;}
+    #header .menu_btn{margin-left: }
 }
 @media all and (max-width:480px){
     #header .top_area .right_area .site_go{display: none}
