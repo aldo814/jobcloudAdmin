@@ -44,7 +44,8 @@ table {
     border-spacing: 0;
 }
 html{overflow: inherit;}
-
+.green{color: #00c57d}
+.red{color: red}
 #new_wrap{background: #f9f9f9;min-height: 100vh}
 body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", sans-serif !important;}
 #header {border-bottom: 0;box-shadow: none !important;background: none}
