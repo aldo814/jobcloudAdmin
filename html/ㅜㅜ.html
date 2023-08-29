@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/kendo.common.min.css" />
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    
+    <script src="js/kendo.all.min.js"></script>
+    
+
+
+</head>
+<body>
+
+<div id="grid"></div>
+<script>
+  let grid = $("#grid").kendoGrid({
+    toolbar: ["save"],
+    columns: [
+      { field: "name" },
+      { field: "age" }
+    ],
+    dataSource: {
+     data: [
+      { id: 1, name: "Jane Doe", age: 30 },
+      { id: 2, name: "John Doe", age: 33 }
+     ],
+     schema:{
+      model: {
+       id: "id",
+      }
+     }
+    },
+    editable: true
+  }).data('kendoGrid');
+  
+  grid.dataSource.add({});
+	grid.editRow($("#grid tr").last());
+</script>
+</body>
+</html>
