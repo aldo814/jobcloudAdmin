@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잡클라우드</title>
+    <link rel="stylesheet" type="text/css" href="http://222.122.63.166:8080/css/admin/sub.css">
+    <!--추가-->
+    <link rel="stylesheet" href="css/new.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <div class="confirmation att">
+        <div class="bg">
+            <h3>출석부</h3>
+            <table class="bt">
+                <colgroup>
+                    <col style="width: 300px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">훈련시행기관</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">훈련과정명</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">훈련기간</th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="mg40">
+                <thead>
+                    <tr>
+                        <th scope="col">성명</th>
+                        <th scope="col">생년월일</th>
+                        <th scope="col">훈련일수</th>
+                        <th scope="col">출석일수</th>
+                        <th scope="col">결석일수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tct">ㅇㅇㅇ</td>
+                        <td class="tct">0000.00.00</td>
+                        <td class="tct bg_yellow">000</td>
+                        <td class="tct bg_yellow">000</td>
+                        <td class="tct bg_yellow">000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <colgroup>
+                    <col style="width: 30%">
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="col" class="bg_green">날짜</th>
+                        <th scope="col">출석</th>
+                        <th scope="col">퇴실</th>
+                        <th scope="col">총 시간</th>
+                    </tr>
+                    <tr>
+                        <td class="tct">0000-00-00</td>
+                        <td class="tct">00:00:00</td>
+                        <td class="tct">00:00:00</td>
+                        <td class="tct bold">00시간 00분</td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                    <tr>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct"></td>
+                        <td class="tct bold"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <p class="name">
+                경기도일자리재단 북부사업본부장
+                <span>각인</span>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        var att = $('.att');
+
+
+        $('.att').each(function() {
+                    // .att 요소의 높이를 확인
+                    var attHeight = $('.att').innerHeight();
+
+                    // 297mm 이상인 경우 .many 클래스 추가
+                    if (attHeight > 1473) {
+                        $('.att').addClass('many');
+                    }
+        });
+
+    </script>
+</body>
+
+</html>

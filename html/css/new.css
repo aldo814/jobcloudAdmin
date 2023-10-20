@@ -44,16 +44,24 @@ table {
     border-spacing: 0;
 }
 html{overflow: inherit;}
-
-#new_wrap{background: #f9f9f9;min-height: 100vh}
+#content .cont_body .title,
+.today-info #todayDate,
+.subtitle-with-desc{font-size:18px !important}
+select.year-select{font-size:14px}
+.k-grid table,
+.k-grid .k-pager-wrap span.k-pager-sizes,
+.k-grid .k-pager-wrap span.k-pager-info,
+.k-tabstrip-items li{font-size:14px !important}
+#details table{font-size:14px !important}
+#new_wrap{background: #f9f9f9;min-height: calc(100vh - 81px)}
 body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", sans-serif !important;}
 #header {border-bottom: 0;box-shadow: none !important;background: none}
 #header .top_area {padding: 20px 32px;display: flex;justify-content: space-between;border-bottom: 0;background: #384150;position: relative;z-index: 555;align-items: center;position: fixed;width: 100%;top: 0;box-sizing: border-box}
 #header .top_area .logo{width: 350px;float: none;padding-left: 0;}
 #header .top_area .right_area{display: flex;align-items: center}
-#header .top_area .right_area .site_go{background: #39b777;;color: #fff;font-size: 15px;padding: 8px 16px;border-radius: 32px;margin-right:32px;}
+#header .top_area .right_area .site_go{background: #39b777;;color: #fff;font-size: 13px;padding: 8px 16px;border-radius: 32px;margin-right:32px;}
 #header .top_area .right_area .login_area{display: flex;align-items: center}
-#header .top_area .right_area .login_area li{font-size: 16px;padding-right: 16px;margin-right: 16px;position: relative;}
+#header .top_area .right_area .login_area li{font-size: 13px;padding-right: 16px;margin-right: 16px;position: relative;}
 #header .top_area .right_area .login_area li:after{content: '';display: block;background: #888;width: 1px;height: 13px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
 #header .top_area .right_area .login_area li:last-child{padding-right: 0;margin-right: 0;}
 #header .top_area .right_area .login_area li:last-child:after{display: none}
@@ -62,14 +70,14 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .top_area .right_area .login_area li .edit:before{content: '';background: url(../images/renewal/admin/top_ico.png) no-repeat;filter: invert(100%);width: 19px;height: 20px;display:block;position: absolute;left: 0;transform: translateY(-50%);top: 55%;}
 #header .top_area .right_area .login_area li .logout{padding-left: 21px}
 #header .top_area .right_area .login_area li .logout:before{content: '';background: url(../images/renewal/admin/top_ico02.png) no-repeat;filter: invert(100%);width: 16px;height: 16px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
-#header #gnb{width: 280px;position: fixed;left: 0;top: 70px;z-index: 5;}
+#header #gnb{width: 220px;position: fixed;left: 0;top: 70px;z-index: 5;}
 #header .gnb_tab ul{display: flex;}
 #header .gnb_tab ul li{width: 50%;text-align: center;}
 #header .gnb_tab ul li:nth-child(1) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px; ;background: url(../images/renewal/admin/menu.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
 #header .gnb_tab ul li:nth-child(1).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/menu_active.png) no-repeat;width: 16px;height: 17px;margin-right: 5px;}
 #header .gnb_tab ul li:nth-child(2) a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/module_ico.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
 #header .gnb_tab ul li:nth-child(2).item-selected a:before{content: '';display: inline-block;vertical-align: middle;margin-top: -3px;background: url(../images/renewal/admin/module_active.png) no-repeat;width: 19px;height: 18px;margin-right: 5px;}
-#header .gnb_tab ul li a{display: block;padding: 15px;font-size: 18px;color:#888888;}
+#header .gnb_tab ul li a{display: block;padding: 13px;font-size: 15px;color:#888888;}
 #header .gnb_tab ul li.active a{color: #000000}
 #header .gnb_area{background: #fff;}
 #header  .tab_content{padding: 20px 20px 30px 20px}
@@ -85,19 +93,19 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .item-selected .item-right {background: #fff;}
 #header .item-selected .item-left{border-radius: 0 25px 0 0;}
 #header .item-selected .item-right {border-radius: 25px 16px 0 0;}
-#header .tab_content{height: calc(100vh - 139px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;margin-top:-1px}
+#header .tab_content{height: calc(100vh - 124px);background: #fff;overflow-y: auto;border-radius: 0 10px 0 0;margin-top:-1px}
 #header .gnb_area > li a{display: block;}
 #header .gnb_area > li.active > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li.active > a:after{content: '';display: block;/* background:#0082cc; */width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area > li:hover > a{background: #f7fbfd;border-radius: 8px;position: relative;overflow: hidden;color: #000}
 #header .gnb_area > li:hover > a:after{content: '';display: block;background:#0082cc;width: 8px;height: 100%;position: absolute;right: 0;top: 0;}
 #header .gnb_area li.active a{color: #000000;}
-#header .gnb_area > li > a{padding: 15px;position: relative}
-#header .gnb_area > li > a{font-size: 16px;color: #888888;font-weight: 500;}
+#header .gnb_area > li > a{padding: 14px;position: relative}
+#header .gnb_area > li > a{font-size: 14px;color: #888888;font-weight: 500;}
 #header .gnb_area > li > ul{padding: 0 20px;position: relative;display: none}
 #header .gnb_area > li a:before{content: '';display: block;background: url(../images/renewal/icon/icon_menu_arrow.png) no-repeat;width: 14px;height: 9px;position: absolute;right: 12px;top: 50%;transform: translateY(-50%) rotate(-90deg);/* transform: rotate(0deg); */opacity: .25;}
 #header .gnb_area > li a:only-child:before{display: none}
-#header .gnb_area > li > ul li a{font-size: 15px;padding: 8px 8px 8px 16px;color: #888 !important;line-height: 22px;border-left: 3px solid #eaeaea;}
+#header .gnb_area > li > ul li a{font-size: 13px;padding: 8px 8px 8px 16px;color: #888 !important;line-height: 22px;border-left: 3px solid #eaeaea;}
 #header .gnb_area > li > ul li a:hover,
 #header .gnb_area > li > ul li a:focus,
 #header .gnb_area > li > ul li a:active{color: #000 !important;font-weight: 500}
@@ -154,9 +162,9 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .gnb_area > li.item10.active:hover:before,
 #header .gnb_area > li.item10.active:active:before,
 #header .gnb_area > li.item10.active:focus:before{content: '';display: block;background: url(../images/gnb_ico10_active.png) no-repeat left;width: 14px;height: 17px;position: absolute;left: 10px;top:15px;z-index: 5}
-.conts_main{padding: 35px;box-sizing: border-box;width: calc(100% - 280px);position: relative;margin: 75px 0 0 280px}
+.conts_main{padding: 35px;box-sizing: border-box;width: calc(100% - 220px);position: relative;margin: 75px 0 0 220px}
 
-/* 모바일 메뉴 */
+/* ����� �޴� */
 #header .menu_btn {display: none;}
 #header .menu_btn span{display: block;width: 20px;height: 2px;background: #fff;;transition: all 0.5s}
 #header .menu_btn span:nth-child(2){margin: 5px 0}
@@ -165,7 +173,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 #header .menu_btn.active span:nth-child(2){transform: rotate(45deg) }
 #header .menu_btn.active span:nth-child(3){transform: rotate(-45deg);margin-top: -7px}
 
-/* 로그인 & 회원가입 */
+/* �α��� & ȸ������ */
 .login_wrap{max-width: 560px;margin: auto;border: 1px solid #ececec;box-shadow: 0 1px 2px rgba(191, 191, 191, 0.2);margin-top: 200px}
 .login_wrap .logo_area{background: #fafafa;text-align: center;padding: 50px 20px}
 .login_wrap .cont_area{padding: 50px 60px}
@@ -193,7 +201,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .login_wrap .sub_area .look_box a:last-child:after{display: none;}
 .container{max-width: 1200px;width: calc(100% - 40px);margin: auto;}
 
-/* 팝업 */
+/* �˾� */
 .shadow{background: rgba(0, 0, 0, 0.33);width: 100%;height: 100vh;position: fixed;top: 0;left: 0;}
 .popup{position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 999;max-width: 560px;width: calc(100% - 40px); }
 .popup .pop_head{background: #0082cc;color: #fff;padding: 15px;display: flex;justify-content: space-between;align-items: center;font-size: 16px;}
@@ -202,7 +210,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .popup .btn_two {display: flex;margin-top: 30px;justify-content: space-between;}
 .popup .btn_two a{width: calc(50% - 5px);text-align: center;padding: 15px;box-sizing: border-box;border-radius: 5px;font-size: 16px;font-weight: 500}
 
-/* 아이디&비밀번호 찾기 */
+/* ���̵�&��й�ȣ ã�� */
 .pop_tit{font-size: 24px;color: #333;text-align: center;font-weight: 500;margin-bottom: 30px}
 .id_find > div{border-bottom: 1px solid #dddddd;margin-bottom: 25px;}
 .id_find > div:last-child{margin-bottom: 10px}
@@ -216,11 +224,11 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .popup .id_complete .blue{color: #0082cc;font-weight: 500}
 .popup .desc.tct.f16 {margin-top: 20px}
 
-/* 비밀번호 재설정 */
+/* ��й�ȣ �缳�� */
 .pw_reset .id_find div{margin-bottom: 10px;}
 .pw_reset .id_find div:nth-child(3){margin-top: 30px}
 .pw_reset .id_find div label{font-size: 16px}
-/* 회원가입 */
+/* ȸ������ */
 .join_area{margin:50px auto !important}
 .join_area .join_id{display: flex;align-items: center}
 .join_area .join_id a{font-size: 14px;color: #888888;width: 80px;text-align: center;padding:7px  10px;border-radius: 5px;background: #f8f8f8;border:1px solid #dddddd;}
@@ -230,7 +238,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .join_area .check_style label a{color: #007eff;}
 .join_area .check_style p{font-size: 14px;color: #888888;margin-left: 25px;margin-top: 10px;line-height: 22px}
 
-.confirmation{padding: 98px 100px;box-sizing: border-box;background: url(../images/admin/cf_line01.png) no-repeat;max-width: 900px;}
+.confirmation{padding: 98px 100px;box-sizing: border-box;background: url(../images/admin/cf_line01.png) no-repeat;max-width: 900px;height: 1229px}
 .confirmation .bg{background: url(../images/admin/cf_bg.png) no-repeat center;}
 .confirmation h3{text-align: center;font-size: 66px;font-weight: 500;}
 .confirmation ul{margin: 140px 0}
@@ -246,11 +254,32 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .confirmation .name{display: flex;justify-content: center;font-size: 50px;font-weight: 500;align-items: center}
 .confirmation .name span{font-size: 25px;font-weight: 400;color: #888888;background: #f2f2f2;width: 100px;height: 100px;display: flex;justify-content: center;align-items: center;margin-left: 15px}
 
-.certifi.certifi01{background: url(../images/admin/ct01.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 900px;width: 100%}
-.certifi.certifi02{background: url(../images/admin/ct02.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%}
-.certifi.certifi03{background: url(../images/admin/ct03.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%}
+.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
+.rc li span{font-weight: 500}
+.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
+.att{background: none;position: relative;height: auto;padding: 98px 40px}
+.att h3{margin-bottom: 40px}
+.att:before{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;top: 0;}
+.att:after{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;bottom: 0;}
+.att table caption{position: absolute;left: -9999px;width: 1px;height: 1px;overflow: hidden}
+.att table{border-collapse: collapse;width: 100%;}
+.att table.bt{border-top: 3px solid #003381}
+.att table tr{border-bottom: 1px solid #003381;border-top: 1px solid #003381;}
+.att table th{font-size: 25px;padding: 10px;background: #e5ebf4;vertical-align: middle}
+.att table td{font-size: 25px !important;padding: 10px;font-weight: 400 !important;height: 40px;vertical-align: middle}
+.att table .tct{text-align: center;}
+.att table .bg_yellow{background: #fffddf}
+.att table .bg_green{background: #acefe2}
+.mg40{margin: 40px 0}
+.att table td.bold{font-weight: 500 !important}
+.att .name{margin-top: 40px}
+
+.certifi.certifi01{background: url(../images/admin/ct01.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 900px;width: 100%;height: 1240px}
+.certifi.certifi02{background: url(../images/admin/ct02.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px;}
+.certifi.certifi03{background: url(../images/admin/ct03.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px}
 .certifi .bg{background: url(../images/admin/cf_bg.png) no-repeat center;}
 .certifi .logo{text-align: center;margin-bottom: 4rem}
+.certifi .logo img{max-width: 180px}
 .certifi h3{text-align: center;font-size: 66px;font-weight: 500;}
 .certifi ul{margin: 113px 5rem;}
 .certifi ul span{;display: inline-block}
@@ -261,7 +290,8 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .certifi .tct{word-break: keep-all;font-size: 30px;font-weight: 500;line-height: 1.5}
 .certifi .date{font-size: 40px;margin: 100px 0 70px 0}
 .certifi .name{font-weight: 500;font-size: 50px;display: flex;align-items: center;justify-content: center}
-.certifi .name span{font-size: 25px;font-weight: 400;color: #888888;background: #f2f2f2;width: 100px;height: 100px;display: flex;justify-content: center;align-items: center;margin-left: 15px}
+.certifi .name span{width: 100px;height: 100px;display: flex;justify-content: center;align-items: center;margin-left: 15px}
+.certifi .name span img{max-width: 100px}
 
 .certifi02 ul{margin: 140px 5rem;}
 .certifi02 .date{font-size: 40px;margin: 105px 0 80px 0}
@@ -270,8 +300,42 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .certifi03 ul{margin: 140px 5rem;}
 .certifi03 .date{font-size: 40px;margin: 105px 0 80px 0}
 
+.certifi03 {padding: 170px 100px !important}
+.certifi03 ul{margin: 140px 5rem;}
+.certifi03 .date{font-size: 40px;margin: 105px 0 80px 0}
+
+.cert_tem{display: flex;}
+.cert_tem > div {text-align: center;margin-right: 50px}
+.cert_tem .img{border: 1px solid #ddd;width: 150px;height: 150px;margin-bottom: 20px}
+.cert_tem .img img{display: block;width: 100%;height: 100%}
+.cert_tem input{display: block;margin: 0 auto 10px auto}
+
+.button_input > div{display: inline-block}
+.button_input > div + div{margin-left: 20px}
+.button_input input[type=checkbox]{
+    display: none;
+}
+.button_input input[type=checkbox]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 35px;
+    width: 120px;
+    border: 1px solid #dcdcdc;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 35px;
+}
+.button_input input[type=checkbox]+label{
+    background-color: #fff;
+    color: #333;
+}
+.button_input input[type=checkbox]:checked+label{
+    background-color: #f5f5f5;
+}
 
 @media print {
+    html,body{margin: 0;width: 21cm;
+    height: 29.7cm;}
     .page {
     margin: 0;
     border: initial;
@@ -280,24 +344,49 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     min-height: initial;
     box-shadow: initial;
     background: initial;
-    page-break-after: always;
-        width: 21cm;
-  height: 29.7cm;
+    page-break-after:avoid;
+    width: 21cm;
+    height: 29.7cm;
   }
     @page {
   size: A4;
   margin: 0;
 }
-    
-    .confirmation{padding: 100px 80px;margin-top: 20px;background-size: 21cm}
+
+    .confirmation{padding: 80px 80px;background-size: 21cm 29.7cm;height:29.7cm;box-sizing:border-box;}
     .confirmation ul{margin: 70px 0}
-    .certifi.certifi01{background-size: 21cm;padding: 80px 50px;margin-top: 13px}
+    .certifi.certifi01{background-size: 21cm 29.7cm;;padding: 20px 50px;height:29.7cm;box-sizing:border-box;}
     .certifi.certifi01 ul {margin: 70px 5rem}
-    .certifi.certifi02{padding: 90px 50px !important;background-size: 21cm;margin-top: 30px}
+    .certifi.certifi02{padding: 90px 50px !important;background-size: 21cm 29.7cm;;height:29.7cm;box-sizing:border-box;}
     .certifi.certifi02 ul {margin: 70px 5rem}
     .certifi02 .date{margin: 65px 0 40px 0}
-    .certifi.certifi03{padding: 80px 50px !important;background-size: 21cm;margin-top: 30px}
+    .certifi.certifi03{padding: 80px 50px !important;background-size: 21cm 29.7cm;;height:29.7cm;box-sizing:border-box;}
     .certifi.certifi03 ul{margin: 90px 5rem}
+    
+    .rc{background-size: 21cm 29.7cm;height:29.7cm;box-sizing:border-box}
+    .rc h3{font-size: 40px;margin-bottom: 120px}
+    .rc ul{margin-bottom: 140px}
+    .rc .date{margin: 80px 0}
+    .rc .name{font-size: 35px}
+    
+    .att{width: 210mm;min-height: 297mm;box-sizing:border-box;padding: 80px 40px;}
+    .att .bg{display: flex;flex-direction: column;}
+    .att table{width: 100%;  }
+    .att:before,
+    .att:after{background-size: 21cm;right: 0}
+    .att:after{position: fixed;z-index: -1}
+    .att h3{font-size: 40px}
+    .att .name{font-size: 25px;page-break-before:avoid}
+    .att .name span,
+    .att .name img{page-break-before:avoid}
+    .att table th{font-size: 18px !important}
+    .att table td{font-size: 18px !important;height: 30px;padding: 5px 10px}
+    .many {background: #fff !important}
+    thead {display: table-header-group;}
+    table {
+            -fs-table-paginate: paginate;
+        }
+    
 }
 
 @media all and (max-width:1200px){
@@ -314,7 +403,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header.active{position: fixed;z-index:999}
     #header .top_area .logo{width: auto}
     #header.on .right_area{margin-left: auto;margin-right: 20px;}
-    #header .top_area .right_area .site_go{font-size:14px;padding: 5px 10px}
+    #header .top_area .right_area .site_go{font-size:13px;padding: 5px 10px}
     .conts_main{width: 100%;float: none;padding: 20px;margin: 0}
 }
 
@@ -323,7 +412,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
     #header.on .right_area{margin-right: 15px}
     #header .top_area .logo{max-width: 130px}
     #header .top_area .logo img{width: 100%}
-    #header .gnb_tab ul li a{font-size: 16px}
+    #header .gnb_tab ul li a{font-size: 15px}
     #header .gnb_area > li > a{font-size: 15px}
     #header .gnb_area > li > ul li a{font-size: 13px}
     .conts_main{padding: 20px}
@@ -336,7 +425,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 }
 @media all and (max-width:480px){
     #header .top_area .right_area .site_go{display: none}
-    /* 로그인 */
+    /* �α��� */
     .login_wrap{max-width: 100%;margin-top: 100px}
     .login_wrap .logo_area{padding: 30px 20px}
     .login_wrap .logo_area img{width: 200px}
