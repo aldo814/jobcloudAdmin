@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잡클라우드</title>
+    <link rel="stylesheet" type="text/css" href="http://222.122.63.166:8080/css/admin/sub.css">
+    <!--추가-->
+    <link rel="stylesheet" href="css/new.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <div id="new_wrap">
+        <!--header-->
+        <header id="header" class="on">
+            <div class="top_area">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/admin/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="right_area">
+                    <a href="#" class="site_go">사이트 바로가기</a>
+                    <ul class="login_area">
+                        <li>
+                            <a href="#" class="edit">관리자 정보수정</a>
+                        </li>
+                        <li>
+                            <a href="#" class="logout">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div id="gnb">
+                <div class="gnb_tab">
+                    <ul>
+                        <li class="item item-selected active">
+                            <a href="#" rel="menu" class="item-left">메뉴</a>
+                        </li>
+                        <li class="item item-unselected">
+                            <a href="#" rel="module" class="item-right">모듈</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="gnb_area tab_content" id="menu">
+                    <li class="item01 active">
+                        <a href="#">관리자 메인</a>
+                    </li>
+                    <li class="item02">
+                        <a href="#">고객사 관리</a>
+                    </li>
+                    <li class="item03">
+                        <a href="#">공통기능 관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">공통코드 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">메뉴 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item04">
+                        <a href="#">회원관리</a>
+                    </li>
+                    <li class="item05">
+                        <a href="#">콘텐츠관리</a>
+                        <ul>
+                            <li><a href="#">분류 관리</a></li>
+                            <li><a href="#">동영상 관리</a></li>
+                            <li><a href="#">자료 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="item06">
+                        <a href="#">과정관리</a>
+                        <ul>
+                            <li><a href="#">과정 관리</a></li>
+                            <li><a href="#">분류 관리 </a></li>
+                        </ul>
+                    </li>
+                    <li class="item07">
+                        <a href="#">차수관리</a>
+                    </li>
+                    <li class="item08">
+                        <a href="#">수강관리</a>
+                    </li>
+                    <li class="item09">
+                        <a href="#">사이트관리</a>
+                        <ul>
+                            <li><a href="#">회사정보 관리</a></li>
+                            <li><a href="#">조직 관리</a></li>
+                            <li><a href="#">팝업 관리</a></li>
+                            <li><a href="#">배너 관리</a></li>
+                            <li><a href="#">메인화면 관리</a></li>
+                            <li><a href="#">페이지 관리</a></li>
+                            <li><a href="#">게시판 관리</a></li>
+                            <li><a href="#">뉴스레터 구독자 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="item10">
+                        <a href="#">통계관리</a>
+                    </li>
+                </ul>
+
+                <div class="tab_content" id="module">
+
+                </div>
+            </div>
+        </header>
+        <!--//header-->
+        <div class="conts_main">
+            <div class="courseSearch">
+                <table>
+                  <caption>검색</caption>
+                  <colgroup>
+                    <col style="width: 15%">
+                    <col>
+                  </colgroup>
+                   <tbody>
+                    <tr>
+                        <th scope="row">과정 구분</th>
+                        <td>
+                           <div class="bc_warp">
+                            <ul class="btn_chk">
+                                <li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li>
+                            </ul>
+                            
+                            <a href="#" class="cls_btn">삭제</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">과정 카테고리</th>
+                        <td>
+                            <ul class="btn_chk">
+                                <li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li><li>
+                                    <input type="checkbox" id="ch01"><label for="ch01">온라인</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">태그</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">검색어</th>
+                        <td>
+                            <input type="text" class="input_style02 w90p" placeholder="검색어를 입력해주세요.">
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="blue_scr_button">   
+                <input type="submit" value="검색">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
