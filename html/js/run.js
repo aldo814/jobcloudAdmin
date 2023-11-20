@@ -405,6 +405,14 @@ $("#attachment").on('change', function(e){
         $('.shadow').hide();
     };
 
+
+    function close_pop03(flag) {
+        $('.sch_pop').hide();
+        $('body').removeClass('not_scroll');
+        $('.shadow').hide();
+    };
+
+
  
     /*윈도우창 닫기*/
        function closeWindow() {  
