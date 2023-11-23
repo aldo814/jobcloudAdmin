@@ -43,7 +43,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.w90p{width: 90%}
 .select_style02::-ms-expand {display: none;}
 .select_style02{border:0;-o-appearance: none;-webkit-appearance: none;-moz-appearance: none;appearance: none;padding: 10px 30px 10px 15px;background:url(../images/admin/select_arrow02.png) no-repeat right 7px center #f7f8fa;font-size:14px;color:#9ea4aa;min-width:120px}
 .input_style{border:0;background:#f7f8fa !important;font-size:14px !important;color:#9ea4aa;padding:14px 15px !important;}
@@ -248,7 +247,7 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .container{max-width: 1200px;width: calc(100% - 40px);margin: auto;}
 
 /* �˾� */
-.shadow{background: rgba(0, 0, 0, 0.33);width: 100%;height: 100vh;position: fixed;top: 0;left: 0;z-index: 555}
+.shadow{background: rgba(0, 0, 0, 0.33);width: 100%;height: 100vh;position: fixed;top: 0;left: 0;}
 .popup{position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 999;max-width: 560px;width: calc(100% - 40px); }
 .popup .pop_head{background: #0082cc;color: #fff;padding: 15px;display: flex;justify-content: space-between;align-items: center;font-size: 16px;}
 .popup .pop_head .close_btn{background: url(../images/pop_close.png) no-repeat;width: 18px;height: 18px;text-indent: -9999px;}
@@ -284,57 +283,79 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .join_area .check_style label a{color: #007eff;}
 .join_area .check_style p{font-size: 14px;color: #888888;margin-left: 25px;margin-top: 10px;line-height: 22px}
 
-.confirmation{padding: 98px 100px;box-sizing: border-box;background: url(../images/admin/cf_line01.png) no-repeat;max-width: 900px;height: 1229px}
-.confirmation .bg{background: url(../images/admin/cf_bg.png) no-repeat center;}
-.confirmation h3{text-align: center;font-size: 66px;font-weight: 500;}
+.confirmation{padding: 98px 100px;box-sizing: border-box;background: url(../images/admin/cf_line01.png) no-repeat;max-width: 900px;height: 1229px;}
+.confirmation *{color:#333}
+.confirmation .bg{background: url(../images/admin/cf_bg.png) no-repeat center;display:flex;flex-direction: column;height: 100%}
+.confirmation h3{text-align: center;font-size: 40px;font-weight: 500;}
 .confirmation ul{margin: 140px 0}
 .confirmation ul span{;display: inline-block}
-.confirmation ul li{margin-bottom: 25px;font-size: 30px;}
+.confirmation ul li{margin-bottom: 25px;font-size: 22px;}
 .confirmation ul li:last-child{margin-bottom: 0}
-.confirmation ul span.two{margin-right: 55px}
-.confirmation ul span.three{margin-right: 14px}
+.confirmation ul span.two{margin-right: 40px}
+.confirmation ul span.three{margin-right: 10px}
 .confirmation p{text-align: center;}
-.confirmation .tct{font-size: 30px;line-height: 1.5;word-break: keep-all;font-weight: 500;}
+.confirmation .tct{font-size: 22px;line-height: 1.5;word-break: keep-all;font-weight: 500;}
 .confirmation .tct span{color: #00618f}
-.confirmation .date{font-size: 40px;margin: 70px 0 80px 0}
-.confirmation .name{display: flex;justify-content: center;font-size: 50px;font-weight: 500;align-items: center}
+.confirmation .date{font-size: 30px;margin: auto 0 60px 0}
+.confirmation .name{display: flex;justify-content: center;font-size: 40px;font-weight: 500;align-items: center;}
 .confirmation .name span{font-size: 25px;font-weight: 400;color: #888888;background: #f2f2f2;width: 100px;height: 100px;display: flex;justify-content: center;align-items: center;margin-left: 15px}
 
+.certifi{color:#333}
 .certifi.certifi01{background: url(../images/admin/ct01.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 900px;width: 100%;height: 1240px}
 .certifi.certifi02{background: url(../images/admin/ct02.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px;}
 .certifi.certifi03{background: url(../images/admin/ct03.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px}
-.certifi .bg{background: url(../images/admin/cf_bg.png) no-repeat center;}
+.certifi .bg{background: url(../images/admin/cf_bg.png) no-repeat center;display: flex;flex-direction: column;height: 100%}
 .certifi .logo{text-align: center;margin-bottom: 4rem}
 .certifi .logo img{max-width: 180px}
-.certifi h3{text-align: center;font-size: 66px;font-weight: 500;}
+.certifi h3{text-align: center;font-size: 40px;font-weight: 500;}
 .certifi ul{margin: 113px 5rem;}
 .certifi ul span{;display: inline-block}
-.certifi ul li{margin-bottom: 25px;font-size: 30px;}
+.certifi ul li{margin-bottom: 25px;font-size: 22px;}
 .certifi ul li:last-child{margin-bottom: 0}
-.certifi ul span.two{margin-right: 55px}
+.certifi ul span.two{margin-right: 41px}
 .certifi p{text-align: center;}
-.certifi .tct{word-break: keep-all;font-size: 30px;font-weight: 500;line-height: 1.5}
-.certifi .date{font-size: 40px;margin: 100px 0 70px 0}
-.certifi .name{font-weight: 500;font-size: 50px;display: flex;align-items: center;justify-content: center}
+.certifi .tct{word-break: keep-all;font-size: 22px;font-weight: 500;line-height: 1.5}
+.certifi .date{font-size: 30px;margin: auto 0 70px 0}
+.certifi .name{font-weight: 500;font-size: 40px;display: flex;align-items: center;justify-content: center}
 .certifi .name span{width: 100px;height: 100px;display: flex;justify-content: center;align-items: center;margin-left: 15px}
 .certifi .name span img{max-width: 100px}
 
 .certifi02 ul{margin: 140px 5rem;}
-.certifi02 .date{font-size: 40px;margin: 105px 0 80px 0}
+.certifi02 .date{font-size: 30px;margin: auto 0 60px 0}
 
 .certifi03 {padding: 170px 100px !important}
 .certifi03 ul{margin: 140px 5rem;}
-.certifi03 .date{font-size: 40px;margin: 105px 0 80px 0}
+.certifi03 .date{font-size: 30px;margin: auto 0 60px 0}
 
-.certifi03 {padding: 170px 100px !important}
-.certifi03 ul{margin: 140px 5rem;}
-.certifi03 .date{font-size: 40px;margin: 105px 0 80px 0}
 
 .cert_tem{display: flex;}
 .cert_tem > div {text-align: center;margin-right: 50px}
 .cert_tem .img{border: 1px solid #ddd;width: 150px;height: 150px;margin-bottom: 20px}
 .cert_tem .img img{display: block;width: 100%;height: 100%}
 .cert_tem input{display: block;margin: 0 auto 10px auto}
+
+.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
+.rc li span{font-weight: 500}
+.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
+.att{background: none;position: relative;height: auto;padding: 98px 40px}
+.att h3{margin-bottom: 40px}
+.att:before{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;top: 0;}
+.att:after{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;bottom: 0;}
+.att table caption{position: absolute;left: -9999px;width: 1px;height: 1px;overflow: hidden}
+.att table{border-collapse: collapse;width: 100%;}
+.att table.bt{border-top: 3px solid #003381}
+.att table tr{border-bottom: 1px solid #003381;border-top: 1px solid #003381;}
+.att table th{font-size: 22px;padding: 10px;background: #e5ebf4;vertical-align: middle}
+.att table td{font-size: 22px !important;padding: 10px;font-weight: 400 !important;height: 40px;vertical-align: middle}
+.att table .tct{text-align: center;}
+.att table .bg_yellow{background: #fffddf}
+.att table .bg_green{background: #acefe2}
+.mg40{margin: 40px 0}
+.att table td.bold{font-weight: 500 !important}
+.att .name{margin-top: 40px}
+.certifi.certifi01{background: url(../images/admin/ct01.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 900px;width: 100%;height: 1240px}
+.certifi.certifi02{background: url(../images/admin/ct02.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px;}
+.certifi.certifi03{background: url(../images/admin/ct03.jpg) no-repeat;padding: 100px;box-sizing: border-box;max-width: 1000px;width: 100%;height: 1340px}
 
 .button_input > div{display: inline-block}
 .button_input > div + div{margin-left: 20px}
@@ -358,52 +379,6 @@ body, input, select, div, textarea, table, button {font-family: "Noto Sans KR", 
 .button_input input[type=checkbox]:checked+label{
     background-color: #f5f5f5;
 }
-
-.btn_chk li{display: inline-block;margin: 5px 2px}
-.btn_chk li input{display:none;}
-.btn_chk li input + label{display: inline-block;cursor: pointer;color: #888;
-    border: 1px solid #ddd;padding:10px 30px;border-radius: 30px;
-    text-align: center;
-    font-size:14px;background: #fff}
-.btn_chk li input:checked+label{background: #0082cc;border-color: #0082cc;color: #fff} 
-
-.courseSearch{border-radius: 15px;overflow: hidden;box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.03)}
-.courseSearch table{width: 100%;}
-.courseSearch caption{position: absolute;left: -99999px;width: 0;height: 0;overflow: hidden;}
-.courseSearch table tr{border-bottom: 1px solid #ddd;}
-.courseSearch table tr:last-child{border-right: 0;}
-.courseSearch table th{background: #f5f5f5;vertical-align: middle;}
-.courseSearch table th,
-.courseSearch table td{padding: 10px}
-.courseSearch table td{background: #fff;}
-.bc_warp{position: relative;}
-.bc_warp .btn_chk{max-width: calc(100% - 26px);width: 100%;}
-.courseSearch .cls_btn{background: url(../images/admin/close.png) no-repeat;width: 16px;height: 16px;position: absolute;right: 10px;top: 50%;transform: translateY(-50%);text-indent: -9999px;display: block;}
-.blue_scr_button {text-align: center;margin-top: 40px;}
-.blue_scr_button input{display: flex;margin: auto;border: 0;color: #fff;background: url(../images/admin/sch.png) no-repeat left 30px center#0093d5;padding: 10px 40px 10px 55px;border-radius: 30px;font-size: 18px;}
-.input_style02{font-size: 14px;background: #fff;border: 1px solid #dddddd;padding: 5px 15px;}
-.input_style02::placeholder{color: #cccccc}
-
-.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
-.rc li span{font-weight: 500}
-.rc{background: url(../images/admin/rc_bg.png) no-repeat;max-width: 1000px;width: 100%;height: 1190px;padding: 98px 90px}
-.att{background: none;position: relative;height: auto;padding: 98px 40px}
-.att h3{margin-bottom: 40px}
-.att:before{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;top: 0;}
-.att:after{content: '';display: block;width: 100%;height: 20px;background: url(../images/admin/att01.png) no-repeat;position: absolute;left: 0;bottom: 0;}
-.att table caption{position: absolute;left: -9999px;width: 1px;height: 1px;overflow: hidden}
-.att table{border-collapse: collapse;width: 100%;}
-.att table.bt{border-top: 3px solid #003381}
-.att table tr{border-bottom: 1px solid #003381;border-top: 1px solid #003381;}
-.att table th{font-size: 25px;padding: 10px;background: #e5ebf4;vertical-align: middle}
-.att table td{font-size: 25px !important;padding: 10px;font-weight: 400 !important;height: 40px;vertical-align: middle}
-.att table .tct{text-align: center;}
-.att table .bg_yellow{background: #fffddf}
-.att table .bg_green{background: #acefe2}
-.mg40{margin: 40px 0}
-.att table td.bold{font-weight: 500 !important}
-.att .name{margin-top: 40px}
-.sch_pop{position: fixed;top:50%;left:50%;transform: translate(-50%,-50%);z-index: 999;max-width: 1200px;width:100%}
 
 @media print {
     html,body{margin: 0;width: 21cm;
